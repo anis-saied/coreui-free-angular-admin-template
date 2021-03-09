@@ -15,6 +15,17 @@
     <li class="nav-item px-3">
       <a class="nav-link" [routerLink]="['/students/new']" routerLinkActive="router-link-active"><i class="cil-user-plus"></i>  Nouveau</a>
     </li>
+    <li class="nav-item px-3">
+      <div class="input-prepend input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fa fa-search"></i></span>
+        </div>
+        <input id="prependedInput" class="form-control" size="16" type="text" placeholder="Code élève ?">
+        <span class="input-group-append">
+          <button class="btn btn-info" type="button">Chercher</button>
+        </span>
+      </div>
+    </li>
   </ul>
   <ul class="nav navbar-nav ml-auto">
     <li class="nav-item dropdown" dropdown placement="bottom right">
