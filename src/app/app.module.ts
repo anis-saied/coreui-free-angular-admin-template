@@ -47,6 +47,7 @@ import { NewTeacherComponent } from './views/teachers/new-teacher/new-teacher.co
 import { ListTeachersComponent } from './views/teachers/list-teachers/list-teachers.component';
 import { NewCourseComponent } from './views/courses/new-course/new-course.component';
 import { ListCoursesComponent } from './views/courses/list-courses/list-courses.component';
+import { SettingsComponent } from './views/settings/settings.component';
 
 @NgModule({
   imports: [
@@ -76,7 +77,8 @@ import { ListCoursesComponent } from './views/courses/list-courses/list-courses.
     NewTeacherComponent,
     ListTeachersComponent,
     NewCourseComponent,
-    ListCoursesComponent
+    ListCoursesComponent,
+    SettingsComponent
   ],
   providers: [
     {

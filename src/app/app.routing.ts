@@ -8,6 +8,7 @@ import { P404Component } from "./views/error/404.component";
 import { P500Component } from "./views/error/500.component";
 import { LoginComponent } from "./views/login/login.component";
 import { RegisterComponent } from "./views/register/register.component";
+import { SettingsComponent } from "./views/settings/settings.component";
 
 export const routes: Routes = [
   {
@@ -85,16 +86,11 @@ export const routes: Routes = [
       },
 
       {
-        path: "notifications",
-        loadChildren: () =>
-          import("./views/notifications/notifications.module").then(
-            (m) => m.NotificationsModule
-          ),
-      },
-      {
-        path: "widgets",
-        loadChildren: () =>
-          import("./views/widgets/widgets.module").then((m) => m.WidgetsModule),
+        path: "settings",
+        component: SettingsComponent,
+        data: {
+          title: "Réglages",
+        },
       },
     ],
   },
