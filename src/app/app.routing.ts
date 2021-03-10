@@ -60,9 +60,9 @@ export const routes: Routes = [
           ),
       },
       {
-        path: "buttons",
+        path: "payments",
         loadChildren: () =>
-          import("./views/buttons/buttons.module").then((m) => m.ButtonsModule),
+          import("./views/payments/payments.module").then((m) => m.PaymentsModule),
       },
       {
         path: "charts",

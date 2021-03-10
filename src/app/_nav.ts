@@ -21,13 +21,13 @@ export const navItems: INavData[] = [
     icon: "cil-search",
   },
   {
-    name: "Paiements",
-    url: "/icons/coreui-icons",
-    icon: "cil-dollar",
-  },
-  {
     title: true,
     name: "Administration",
+  },
+  {
+    name: "Paiements",
+    url: "/payments",
+    icon: "cil-dollar",
   },
   {
     name: "Enseignants",
