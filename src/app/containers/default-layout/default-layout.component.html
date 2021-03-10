@@ -16,6 +16,7 @@
       <a class="nav-link" [routerLink]="['/students/new']" routerLinkActive="router-link-active"><i class="cil-user-plus"></i>  Nouveau</a>
     </li>
     <li class="nav-item px-3">
+      <!-- replace this by searchComponent tag(selector) -->
       <div class="input-prepend input-group">
         <div class="input-group-prepend">
           <span class="input-group-text"><i class="fa fa-search"></i></span>
@@ -34,10 +35,10 @@
       </a>
       <div class="dropdown-menu dropdown-menu-right" *dropdownMenu aria-labelledby="simple-dropdown">
         <div class="dropdown-header text-center"><strong>Account</strong></div>
-        <a class="dropdown-item" href="#"><i class="fa fa-user"></i>Mon profil</a>
-        <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i>Mes paramètres</a>
+        <a class="dropdown-item" [routerLink]="['/profile']" routerLinkActive="router-link-active" ><i class="fa fa-user"></i>Mon profil</a>
+        <a class="dropdown-item" [routerLink]="['/profile/settings']" routerLinkActive="router-link-active" ><i class="fa fa-wrench"></i>Mes paramètres</a>
         <div class="divider"></div>
-        <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
+        <a class="dropdown-item" [routerLink]="['/logout']" routerLinkActive="router-link-active" ><i class="fa fa-lock"></i> Logout</a>
       </div>
     </li>
   </ul>
