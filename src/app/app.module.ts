@@ -43,6 +43,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts';
 import { NewStudentComponent } from './views/students/new-student/new-student.component';
+import { NewTeacherComponent } from './views/teachers/new-teacher/new-teacher.component';
+import { ListTeachersComponent } from './views/teachers/list-teachers/list-teachers.component';
 
 @NgModule({
   imports: [
@@ -68,7 +70,9 @@ import { NewStudentComponent } from './views/students/new-student/new-student.co
     P500Component,
     LoginComponent,
     RegisterComponent,
-    NewStudentComponent
+    NewStudentComponent,
+    NewTeacherComponent,
+    ListTeachersComponent
   ],
   providers: [
     {

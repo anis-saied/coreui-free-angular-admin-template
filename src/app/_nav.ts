@@ -31,7 +31,7 @@ export const navItems: INavData[] = [
   },
   {
     name: "Enseignants",
-    url: "/base",
+    url: "/teachers",
     icon: "icon-puzzle",
   },
   {

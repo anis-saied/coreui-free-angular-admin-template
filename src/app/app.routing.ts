@@ -65,6 +65,11 @@ export const routes: Routes = [
           import("./views/payments/payments.module").then((m) => m.PaymentsModule),
       },
       {
+        path: "teachers",
+        loadChildren: () =>
+          import("./views/teachers/teachers.module").then((m) => m.TeachersModule),
+      },
+      {
         path: "charts",
         loadChildren: () =>
           import("./views/chartjs/chartjs.module").then((m) => m.ChartJSModule),
@@ -76,11 +81,7 @@ export const routes: Routes = [
             (m) => m.DashboardModule
           ),
       },
-      {
-        path: "icons",
-        loadChildren: () =>
-          import("./views/icons/icons.module").then((m) => m.IconsModule),
-      },
+
       {
         path: "notifications",
         loadChildren: () =>
