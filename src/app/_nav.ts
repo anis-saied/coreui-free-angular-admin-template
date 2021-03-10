@@ -36,7 +36,7 @@ export const navItems: INavData[] = [
   },
   {
     name: "Cours",
-    url: "/buttons",
+    url: "/courses",
     icon: "icon-cursor",
   },
 

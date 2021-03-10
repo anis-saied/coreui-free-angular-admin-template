@@ -45,6 +45,8 @@ import { ChartsModule } from 'ng2-charts';
 import { NewStudentComponent } from './views/students/new-student/new-student.component';
 import { NewTeacherComponent } from './views/teachers/new-teacher/new-teacher.component';
 import { ListTeachersComponent } from './views/teachers/list-teachers/list-teachers.component';
+import { NewCourseComponent } from './views/courses/new-course/new-course.component';
+import { ListCoursesComponent } from './views/courses/list-courses/list-courses.component';
 
 @NgModule({
   imports: [
@@ -72,7 +74,9 @@ import { ListTeachersComponent } from './views/teachers/list-teachers/list-teach
     RegisterComponent,
     NewStudentComponent,
     NewTeacherComponent,
-    ListTeachersComponent
+    ListTeachersComponent,
+    NewCourseComponent,
+    ListCoursesComponent
   ],
   providers: [
     {

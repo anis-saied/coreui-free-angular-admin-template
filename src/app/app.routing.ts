@@ -1,13 +1,13 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
 
 // Import Containers
-import { DefaultLayoutComponent } from './containers';
+import { DefaultLayoutComponent } from "./containers";
 
-import { P404Component } from './views/error/404.component';
-import { P500Component } from './views/error/500.component';
-import { LoginComponent } from './views/login/login.component';
-import { RegisterComponent } from './views/register/register.component';
+import { P404Component } from "./views/error/404.component";
+import { P500Component } from "./views/error/500.component";
+import { LoginComponent } from "./views/login/login.component";
+import { RegisterComponent } from "./views/register/register.component";
 
 export const routes: Routes = [
   {
@@ -54,25 +54,27 @@ export const routes: Routes = [
         path: "students",
         loadChildren: () =>
           import("./views/students/students.module").then(
-            
             (m) => m.StudentsModule
-          
           ),
       },
       {
         path: "payments",
         loadChildren: () =>
-          import("./views/payments/payments.module").then((m) => m.PaymentsModule),
+          import("./views/payments/payments.module").then(
+            (m) => m.PaymentsModule
+          ),
       },
       {
         path: "teachers",
         loadChildren: () =>
-          import("./views/teachers/teachers.module").then((m) => m.TeachersModule),
+          import("./views/teachers/teachers.module").then(
+            (m) => m.TeachersModule
+          ),
       },
       {
-        path: "charts",
+        path: "courses",
         loadChildren: () =>
-          import("./views/chartjs/chartjs.module").then((m) => m.ChartJSModule),
+          import("./views/courses/courses.module").then((m) => m.CoursesModule),
       },
       {
         path: "dashboard",
@@ -105,7 +107,7 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' }) ],
-  exports: [ RouterModule ]
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: "legacy" })],
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}
