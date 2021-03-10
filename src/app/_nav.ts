@@ -52,4 +52,9 @@ export const navItems: INavData[] = [
     url: "/settings",
     icon: "icon-settings",
   },
+  {
+    name: "Utilisateurs",
+    url: "/users",
+    icon: "cil-people",
+  },
 ];
